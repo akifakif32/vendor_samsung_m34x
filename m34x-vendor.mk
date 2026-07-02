@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/m34x/proprietary/recovery/root/vendor/firmware/gt9895_m34x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/gt9895_m34x.bin \
+    vendor/samsung/m34x/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/m34x/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     vendor/samsung/m34x/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/m34x/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
@@ -225,6 +226,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.s5e8825 \
     libMERTA \
+    lib_SoundAlive_play_plus_ver500 \
+    lib_SoundBooster_ver1130 \
     libbauthserver \
     libbauthtzcommon \
     libexynoscamera3 \
@@ -233,4 +236,6 @@ PRODUCT_PACKAGES += \
     libexynoscamera_vpl_plugin \
     liblmecpu \
     libsec2lsi_conversion \
-    libswlme
+    libswlme \
+    libaudiosaplus_sec \
+    libsamsungSoundbooster_plus
