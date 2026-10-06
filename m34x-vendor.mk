@@ -237,5 +237,4 @@ PRODUCT_PACKAGES += \
     liblmecpu \
     libsec2lsi_conversion \
     libswlme \
-    libaudiosaplus_sec \
-    libsamsungSoundbooster_plus
+    libaudiosaplus_sec
